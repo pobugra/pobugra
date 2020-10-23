@@ -1,0 +1,1793 @@
+<!doctype hmtl>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="stilius.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zydriukas">
+    <meta name="description" content="Postininkų budėjimo grafikas">
+    <meta name="keywords" content="Postininkų, budėjimo, grafikas, tvarkiniai">
+    <title>Grafikas</title>
+
+</head>
+
+<body>
+
+    <table>
+        <caption>
+            <h1>Postininkų budėjimo grafikas</h1>
+        </caption>
+
+        <tr class="MenesiuEilute">
+            <th id="Issaugoti">
+
+                <form class="SaveButtonPosition">
+                    <input type="button" class="SaveButton" value="Išsaugoti" title="Išsaugoti parinktus postininkus" onclick="patvirtinimas()">
+                </form>
+
+                <!--Mėnesiai-->
+            </th>
+            <th class="Men12" id="Menesis1"></th>
+            <th class="Men12" id="Menesis2"></th>
+            <th class="Men3" id="Menesis3"></th>
+
+        </tr>
+        <!--Mėnesio dienos-->
+        <tr class="DienuEilute">
+            <th id="Diena1"></th>
+            <th id="Diena2"></th>
+            <th id="Diena3"></th>
+            <th id="Diena4"></th>
+            <th id="Diena5"></th>
+            <th id="Diena6"></th>
+            <th id="Diena7"></th>
+            <th id="Diena8"></th>
+            <th id="Diena9"></th>
+            <th id="Diena10"></th>
+            <th id="Diena11"></th>
+            <th id="Diena12"></th>
+            <th id="Diena13"></th>
+            <th id="Diena14"></th>
+        </tr>
+        <!--V. Pavardės-->
+        <tr>
+            <td class="Eilutes"><b> <b></td>
+            <td id="Post1Lang1"></td>
+            <td id="Post1Lang2"></td>
+            <td id="Post1Lang3"></td>
+            <td id="Post1Lang4"></td>
+            <td id="Post1Lang5"></td>
+            <td id="Post1Lang6"></td>
+            <td id="Post1Lang7"></td>
+            <td id="Post1Lang8"></td>
+            <td id="Post1Lang9"></td>
+            <td id="Post1Lang10"></td>
+            <td id="Post1Lang11"></td>
+            <td id="Post1Lang12" class="Langelis">
+                <form name="Post1Box1">
+                    <input class="CheckBox" type="checkbox" title="Nuimk varnelę, jei nėra darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post1Lang13">
+                <form name="Post1Box2">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post1Lang14" onclick="DEMO(E1)">
+                <form name="Post1Box3">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="Eilutes"><b>Marius L.<b></td>
+            <td id="Post2Lang1"></td>
+            <td id="Post2Lang2"></td>
+            <td id="Post2Lang3"></td>
+            <td id="Post2Lang4"></td>
+            <td id="Post2Lang5"></td>
+            <td id="Post2Lang6"></td>
+            <td id="Post2Lang7"></td>
+            <td id="Post2Lang8"></td>
+            <td id="Post2Lang9"></td>
+            <td id="Post2Lang10"></td>
+            <td id="Post2Lang11"></td>
+            <td id="Post2Lang12" class="Langelis">
+                <form name="Post2Box1">
+                    <input class="CheckBox" type="checkbox" title="Nuimk varnelę, jei nėra darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post2Lang13">
+                <form name="Post2Box2">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post2Lang14" onclick="DEMO(E2)">
+                <form name="Post2Box3">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="Eilutes"><b>Dainius P.<b></td>
+            <td id="Post3Lang1"></td>
+            <td id="Post3Lang2"></td>
+            <td id="Post3Lang3"></td>
+            <td id="Post3Lang4"></td>
+            <td id="Post3Lang5"></td>
+            <td id="Post3Lang6"></td>
+            <td id="Post3Lang7"></td>
+            <td id="Post3Lang8"></td>
+            <td id="Post3Lang9"></td>
+            <td id="Post3Lang10"></td>
+            <td id="Post3Lang11"></td>
+            <td id="Post3Lang12" class="Langelis">
+                <form name="Post3Box1">
+                    <input class="CheckBox" type="checkbox" title="Nuimk varnelę, jei nėra darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post3Lang13">
+                <form name="Post3Box2">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post3Lang14" onclick="DEMO(E3)">
+                <form name="Post3Box3">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="Eilutes"><b>Linas G.<b></td>
+            <td id="Post4Lang1"></td>
+            <td id="Post4Lang2"></td>
+            <td id="Post4Lang3"></td>
+            <td id="Post4Lang4"></td>
+            <td id="Post4Lang5"></td>
+            <td id="Post4Lang6"></td>
+            <td id="Post4Lang7"></td>
+            <td id="Post4Lang8"></td>
+            <td id="Post4Lang9"></td>
+            <td id="Post4Lang10"></td>
+            <td id="Post4Lang11"></td>
+            <td id="Post4Lang12" class="Langelis">
+                <form name="Post4Box1">
+                    <input class="CheckBox" type="checkbox" title="Nuimk varnelę, jei nėra darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post4Lang13">
+                <form name="Post4Box2">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post4Lang14" onclick="DEMO(E4)">
+                <form name="Post4Box3">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="Eilutes"><b>Mantas Z.<b></td>
+            <td id="Post5Lang1"></td>
+            <td id="Post5Lang2"></td>
+            <td id="Post5Lang3"></td>
+            <td id="Post5Lang4"></td>
+            <td id="Post5Lang5"></td>
+            <td id="Post5Lang6"></td>
+            <td id="Post5Lang7"></td>
+            <td id="Post5Lang8"></td>
+            <td id="Post5Lang9"></td>
+            <td id="Post5Lang10"></td>
+            <td id="Post5Lang11"></td>
+            <td id="Post5Lang12" class="Langelis">
+                <form name="Post5Box1">
+                    <input class="CheckBox" type="checkbox" title="Nuimk varnelę, jei nėra darbe" name="Nedirba"
+                        checked>
+                </form name="Post7Box1">
+            </td>
+            <td id="Post5Lang13">
+                <form name="Post5Box2">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post5Lang14" onclick="DEMO(E5)">
+                <form name="Post5Box3">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="Eilutes"><b>Vitalijus R.<b></td>
+            <td id="Post6Lang1"></td>
+            <td id="Post6Lang2"></td>
+            <td id="Post6Lang3"></td>
+            <td id="Post6Lang4"></td>
+            <td id="Post6Lang5"></td>
+            <td id="Post6Lang6"></td>
+            <td id="Post6Lang7"></td>
+            <td id="Post6Lang8"></td>
+            <td id="Post6Lang9"></td>
+            <td id="Post6Lang10"></td>
+            <td id="Post6Lang11"></td>
+            <td id="Post6Lang12" class="Langelis">
+                <form name="Post6Box1">
+                    <input class="CheckBox" type="checkbox" title="Nuimk varnelę, jei nėra darbe" name="Nedirba"
+                        checked>
+                </form name="Post7Box1">
+            </td>
+            <td id="Post6Lang13">
+                <form name="Post6Box2">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post6Lang14" onclick="DEMO(E6)">
+                <form name="Post6Box3">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="Eilutes"><b>Edvardas T.<b></td>
+            <td id="Post7Lang1"></td>
+            <td id="Post7Lang2"></td>
+            <td id="Post7Lang3"></td>
+            <td id="Post7Lang4"></td>
+            <td id="Post7Lang5"></td>
+            <td id="Post7Lang6"></td>
+            <td id="Post7Lang7"></td>
+            <td id="Post7Lang8"></td>
+            <td id="Post7Lang9"></td>
+            <td id="Post7Lang10"></td>
+            <td id="Post7Lang11"></td>
+            <td id="Post7Lang12" class="Langelis">
+                <form name="Post7Box1">
+                    <input class="CheckBox" type="checkbox" title="Nuimk varnelę, jei nėra darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post7Lang13">
+                <form name="Post7Box2">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+            <td id="Post7Lang14" onclick="DEMO(E7)">
+                <form name="Post7Box3">
+                    <input class="CheckBoxSmall" type="checkbox" title="Nuimk varnelę, jei nebus darbe" name="Nedirba"
+                        checked>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <!--Siųsti emailą autoriui-->
+    <a class="MailasAutoriui" href="mailto:zydrunas.ilginis@gmail.com" title="Rašyk laišką">Mailas autoriui</a>
+
+    <!--Parinkti postininkus mygtukas-->
+    <form class="ParinktiPostininkus">
+        <input type="button" class="ParinktiPostininkus" value="Parinkti postininkus" onclick="BUDI()">
+    </form>
+
+    <script>
+        function DEMO(x) {
+            if (x[44][0] !== 0) {
+                alert(x[48]);
+            }
+        }
+
+        var Dkint = 0;
+
+        document.getElementById("Issaugoti").rowSpan = "2";
+
+        /* Langeliai su "checkbox" priskiriami kintamiesiems */
+        var L11 = document.getElementById("Post1Lang12").innerHTML;
+        var L12 = document.getElementById("Post2Lang12").innerHTML;
+        var L13 = document.getElementById("Post3Lang12").innerHTML;
+        var L14 = document.getElementById("Post4Lang12").innerHTML;
+        var L15 = document.getElementById("Post5Lang12").innerHTML;
+        var L16 = document.getElementById("Post6Lang12").innerHTML;
+        var L17 = document.getElementById("Post7Lang12").innerHTML;
+
+        var L21 = document.getElementById("Post1Lang13").innerHTML;
+        var L22 = document.getElementById("Post2Lang13").innerHTML;
+        var L23 = document.getElementById("Post3Lang13").innerHTML;
+        var L24 = document.getElementById("Post4Lang13").innerHTML;
+        var L25 = document.getElementById("Post5Lang13").innerHTML;
+        var L26 = document.getElementById("Post6Lang13").innerHTML;
+        var L27 = document.getElementById("Post7Lang13").innerHTML;
+
+        var L31 = document.getElementById("Post1Lang14").innerHTML;
+        var L32 = document.getElementById("Post2Lang14").innerHTML;
+        var L33 = document.getElementById("Post3Lang14").innerHTML;
+        var L34 = document.getElementById("Post4Lang14").innerHTML;
+        var L35 = document.getElementById("Post5Lang14").innerHTML;
+        var L36 = document.getElementById("Post6Lang14").innerHTML;
+        var L37 = document.getElementById("Post7Lang14").innerHTML;
+
+        // Išsaugojimas!
+        function patvirtinimas() {
+            if (E1[44] == undefined) {
+                alert("Nėra pakitimų!");
+            }
+            if (E1[44][0] !== 0) {
+
+                E1.shift();
+                E2.shift();
+                E3.shift();
+                E4.shift();
+                E5.shift();
+                E6.shift();
+                E7.shift();
+
+                Data();
+
+                Lentele();
+                document.getElementById("Post1Lang12").innerHTML = L11;
+                document.getElementById("Post2Lang12").innerHTML = L12;
+                document.getElementById("Post3Lang12").innerHTML = L13;
+                document.getElementById("Post4Lang12").innerHTML = L14;
+                document.getElementById("Post5Lang12").innerHTML = L15;
+                document.getElementById("Post6Lang12").innerHTML = L16;
+                document.getElementById("Post7Lang12").innerHTML = L17;
+                document.getElementById("Post1Lang13").innerHTML = L21;
+                document.getElementById("Post2Lang13").innerHTML = L22;
+                document.getElementById("Post3Lang13").innerHTML = L23;
+                document.getElementById("Post4Lang13").innerHTML = L24;
+                document.getElementById("Post5Lang13").innerHTML = L25;
+                document.getElementById("Post6Lang13").innerHTML = L26;
+                document.getElementById("Post7Lang13").innerHTML = L27;
+                document.getElementById("Post1Lang14").innerHTML = L31;
+                document.getElementById("Post2Lang14").innerHTML = L32;
+                document.getElementById("Post3Lang14").innerHTML = L33;
+                document.getElementById("Post4Lang14").innerHTML = L34;
+                document.getElementById("Post5Lang14").innerHTML = L35;
+                document.getElementById("Post6Lang14").innerHTML = L36;
+                document.getElementById("Post7Lang14").innerHTML = L37;
+            }
+            else {
+                alert("Nėra pakitimų!");
+            }
+        }
+        Data();
+        function Data() {
+            // Menesio Nr.1 langelis
+            var M1 = 8;
+            var men1 = 0;
+            for (x = -44; x <= -20; x += 4) {
+                var men1 = men1 + 1;
+                if (Dpokytis(x) > Dpokytis(x + 4)) {
+                    var M1 = men1;
+                }
+            }
+            if (M1 == 6 || M1 == 7) {
+                var M3 = 0;
+            }
+
+            // Menesio Nr.3 langelis
+            var men3 = 7;
+            for (x = -16; x <= 4; x += 4) {
+                var men3 = men3 - 1;
+                if (Dpokytis(x) > Dpokytis(x + 4)) {
+                    var M3 = men3;
+                }
+            }
+            if (M1 == 8) {
+                var M3 = 0;
+            }
+
+            // Menesio Nr.2 langelis
+            var M2 = 14 - (M1 + M3);
+
+
+            // Mėnesių pokytis
+            var Menesiai = ["Sausis", "Vasaris", "Kovas", "Balandis", "Gegužė", "Birželis", "Liepa", "Rugpjūtis", "Rugsėjis", "Spalis", "Lapkritis", "Gruodis", "Saus.", "Vas.", "Kov.", "Bal.", "Geg.", "Birž.", "Liep.", "Rugp.", "Rugs.", "Spal.", "Lapk.", "Gruod.", ""];
+
+            var Menuo = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + Dkint).getMonth();
+            var In2 = Menuo;
+            var In1 = In2 - 1;
+            var In3 = In2 + 1;
+            if (In1 < 0) {
+                var In1 = In1 + 12;
+            }
+            if (In3 > 11) {
+                var In3 = In3 - 12;
+            }
+
+            if (M3 >= 3) {
+                var In3 = Menuo;
+                var In2 = In3 - 1;
+                var In1 = In3 - 2;
+                if (In2 < 0) {
+                    var In2 = In2 + 12;
+                }
+                if (In1 < 0) {
+                    var In1 = In1 + 12;
+                }
+            }
+
+            if (M1 == 1) {
+                In1 = In1 + 12;
+            }
+            if (M3 == 1) {
+                In3 = In3 + 12;
+            }
+
+            document.getElementById("Menesis1").colSpan = M1;
+            document.getElementById("Menesis2").colSpan = M2;
+            document.getElementById("Menesis3").colSpan = M3;
+
+            document.getElementById("Menesis1").innerHTML = Menesiai[In1];
+            document.getElementById("Menesis2").innerHTML = Menesiai[In2];
+            if (M3 !== 0) {
+                document.getElementById("Menesis3").innerHTML = Menesiai[In3];
+            } else {
+                document.getElementById("Menesis3").innerHTML = Menesiai[24];
+            }
+
+            /* console.log(In1);
+               console.log(In2);
+               console.log(In3); */
+
+            // Dienų pokytis
+            document.getElementById("Diena14").innerHTML = Dpokytis(8);
+            document.getElementById("Diena13").innerHTML = Dpokytis(4);
+            document.getElementById("Diena12").innerHTML = Dpokytis(0);
+            document.getElementById("Diena11").innerHTML = Dpokytis(-4);
+            document.getElementById("Diena10").innerHTML = Dpokytis(-8);
+            document.getElementById("Diena9").innerHTML = Dpokytis(-12);
+            document.getElementById("Diena8").innerHTML = Dpokytis(-16);
+            document.getElementById("Diena7").innerHTML = Dpokytis(-20);
+            document.getElementById("Diena6").innerHTML = Dpokytis(-24);
+            document.getElementById("Diena5").innerHTML = Dpokytis(-28);
+            document.getElementById("Diena4").innerHTML = Dpokytis(-32);
+            document.getElementById("Diena3").innerHTML = Dpokytis(-36);
+            document.getElementById("Diena2").innerHTML = Dpokytis(-40);
+            document.getElementById("Diena1").innerHTML = Dpokytis(-44);
+
+            Dkint = Dkint + 4;
+
+            function Dpokytis(x) {
+                return new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + x + Dkint).getDate();
+            }
+        }
+        if (Ist !== 1) {
+            var Ist = 1;
+            /* ISTORIJA 42*/
+            var E1 = ["n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", 1, 2, 3, 4, 1, 2, 3, 4, "n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "n"];
+            var E2 = ["X", "X", 4, "X", "", 2, "X", "n", 4, "n", "n", "n", "n", "n", "n", 1, "X", 2, "", 4, 3, 1, 2, 3, 4, 1, 3, "", 1, "n", 2, 3, "", 4, 1, 2, 3, 4, "n", "n", "n", "n"];
+            var E3 = ["n", "X", "", "X", 3, "X", "X", 3, 1, "X", 4, 1, 2, 3, 4, 3, "n", "n", "n", "n", "n", 2, 3, 4, 1, "", 2, 3, 4, 2, 1, "n", "", "n", 3, 4, 1, 2, 3, 2, 3, 4];
+            var E4 = ["", 2, 3, "X", "X", 3, "X", "n", "", 1, "n", "n", "n", "n", "n", "n", 2, 3, "X", "", 1, "n", "n", "n", "n", 2, 1, 4, "", 3, 4, "", 2, 3, 4, "n", "n", "n", "n", "n", "n", "n"];
+            var E5 = ["X", 4, "X", "", 4, "X", "n", 2, 3, 4, 1, 2, 3, 4, 1, 2, "", 4, 1, 2, "", 3, 4, 1, 2, 3, 4, "n", "", 1, 3, 2, 4, "n", "n", "n", "n", "n", 1, "n", 2, 3];
+            var E6 = ["X", "n", "n", "", "", "n", 2, 1, 2, "n", "X", "X", 1, 2, "X", 4, 1, "", 2, 3, 4, "n", "n", "n", "n", "n", "", 1, 2, 4, "n", 1, 3, 1, 2, 3, 4, 1, 2, 4, 1, 2];
+            var E7 = ["X", "", 1, 3, "X", "n", "n", "n", "n", 3, 2, 3, "X", 1, 2, "", "X", 1, 3, 1, 2, 4, 1, 2, 3, 4, "", 2, 3, "", "n", 4, 1, 2, "n", "n", "n", "n", "n", 3, 4, 3];
+
+
+            /* Atsitiktine tvarka parenkama istorija 
+            var E1 = [0];
+            var E2 = [0];
+            var E3 = [0];
+            var E4 = [0];
+            var E5 = [0];
+            var E6 = [0];
+            var E7 = [0];
+            var P = ["", "n"];
+            for (x = 0; x <= 41; x++) {
+                for (y = 1; y <= 4; y++) {
+                    var XX = Math.floor(Math.random() * 7);
+                    if (XX == 0 && E1[x] !== 1 && E1[x] !== 2 && E1[x] !== 3 && E1[x] !== 4) {
+                        E1[x] = y;
+                    }
+                    if (XX == 1 && E2[x] !== 1 && E2[x] !== 2 && E2[x] !== 3 && E2[x] !== 4) {
+                        E2[x] = y;
+                    }
+                    if (XX == 2 && E3[x] !== 1 && E3[x] !== 2 && E3[x] !== 3 && E3[x] !== 4) {
+                        E3[x] = y;
+                    }
+                    if (XX == 3 && E4[x] !== 1 && E4[x] !== 2 && E4[x] !== 3 && E4[x] !== 4) {
+                        E4[x] = y;
+                    }
+                    if (XX == 4 && E5[x] !== 1 && E5[x] !== 2 && E5[x] !== 3 && E5[x] !== 4) {
+                        E5[x] = y;
+                    }
+                    if (XX == 5 && E6[x] !== 1 && E6[x] !== 2 && E6[x] !== 3 && E6[x] !== 4) {
+                        E6[x] = y;
+                    }
+                    if (XX == 6 && E7[x] !== 1 && E7[x] !== 2 && E7[x] !== 3 && E7[x] !== 4) {
+                        E7[x] = y;
+                    }
+                    if (E1[x] !== y && E2[x] !== y && E3[x] !== y && E4[x] !== y && E5[x] !== y && E6[x] !== y && E7[x] !== y) {
+                        var y = y - 1;
+                    }
+                }
+                if (E1[x] !== 1 && E1[x] !== 2 && E1[x] !== 3 && E1[x] !== 4) {
+                    E1[x] = P[randomPOST()];
+                }
+                if (E2[x] !== 1 && E2[x] !== 2 && E2[x] !== 3 && E2[x] !== 4) {
+                    E2[x] = P[randomPOST()];
+                }
+                if (E3[x] !== 1 && E3[x] !== 2 && E3[x] !== 3 && E3[x] !== 4) {
+                    E3[x] = P[randomPOST()];
+                }
+                if (E4[x] !== 1 && E4[x] !== 2 && E4[x] !== 3 && E4[x] !== 4) {
+                    E4[x] = P[randomPOST()];
+                }
+                if (E5[x] !== 1 && E5[x] !== 2 && E5[x] !== 3 && E5[x] !== 4) {
+                    E5[x] = P[randomPOST()];
+                }
+                if (E6[x] !== 1 && E6[x] !== 2 && E6[x] !== 3 && E6[x] !== 4) {
+                    E6[x] = P[randomPOST()];
+                }
+                if (E7[x] !== 1 && E7[x] !== 2 && E7[x] !== 3 && E7[x] !== 4) {
+                    E7[x] = P[randomPOST()];
+                }
+            }
+            function randomPOST() {
+                return Math.floor(Math.random() * 2)
+            } */
+        }
+        Lentele();
+        function Lentele() {
+            document.getElementById("Post1Lang1").innerHTML = E1[31];
+            document.getElementById("Post1Lang2").innerHTML = E1[32];
+            document.getElementById("Post1Lang3").innerHTML = E1[33];
+            document.getElementById("Post1Lang4").innerHTML = E1[34];
+            document.getElementById("Post1Lang5").innerHTML = E1[35];
+            document.getElementById("Post1Lang6").innerHTML = E1[36];
+            document.getElementById("Post1Lang7").innerHTML = E1[37];
+            document.getElementById("Post1Lang8").innerHTML = E1[38];
+            document.getElementById("Post1Lang9").innerHTML = E1[39];
+            document.getElementById("Post1Lang10").innerHTML = E1[40];
+            document.getElementById("Post1Lang11").innerHTML = E1[41];
+
+            document.getElementById("Post2Lang1").innerHTML = E2[31];
+            document.getElementById("Post2Lang2").innerHTML = E2[32];
+            document.getElementById("Post2Lang3").innerHTML = E2[33];
+            document.getElementById("Post2Lang4").innerHTML = E2[34];
+            document.getElementById("Post2Lang5").innerHTML = E2[35];
+            document.getElementById("Post2Lang6").innerHTML = E2[36];
+            document.getElementById("Post2Lang7").innerHTML = E2[37];
+            document.getElementById("Post2Lang8").innerHTML = E2[38];
+            document.getElementById("Post2Lang9").innerHTML = E2[39];
+            document.getElementById("Post2Lang10").innerHTML = E2[40];
+            document.getElementById("Post2Lang11").innerHTML = E2[41];
+
+            document.getElementById("Post3Lang1").innerHTML = E3[31];
+            document.getElementById("Post3Lang2").innerHTML = E3[32];
+            document.getElementById("Post3Lang3").innerHTML = E3[33];
+            document.getElementById("Post3Lang4").innerHTML = E3[34];
+            document.getElementById("Post3Lang5").innerHTML = E3[35];
+            document.getElementById("Post3Lang6").innerHTML = E3[36];
+            document.getElementById("Post3Lang7").innerHTML = E3[37];
+            document.getElementById("Post3Lang8").innerHTML = E3[38];
+            document.getElementById("Post3Lang9").innerHTML = E3[39];
+            document.getElementById("Post3Lang10").innerHTML = E3[40];
+            document.getElementById("Post3Lang11").innerHTML = E3[41];
+
+            document.getElementById("Post4Lang1").innerHTML = E4[31];
+            document.getElementById("Post4Lang2").innerHTML = E4[32];
+            document.getElementById("Post4Lang3").innerHTML = E4[33];
+            document.getElementById("Post4Lang4").innerHTML = E4[34];
+            document.getElementById("Post4Lang5").innerHTML = E4[35];
+            document.getElementById("Post4Lang6").innerHTML = E4[36];
+            document.getElementById("Post4Lang7").innerHTML = E4[37];
+            document.getElementById("Post4Lang8").innerHTML = E4[38];
+            document.getElementById("Post4Lang9").innerHTML = E4[39];
+            document.getElementById("Post4Lang10").innerHTML = E4[40];
+            document.getElementById("Post4Lang11").innerHTML = E4[41];
+
+            document.getElementById("Post5Lang1").innerHTML = E5[31];
+            document.getElementById("Post5Lang2").innerHTML = E5[32];
+            document.getElementById("Post5Lang3").innerHTML = E5[33];
+            document.getElementById("Post5Lang4").innerHTML = E5[34];
+            document.getElementById("Post5Lang5").innerHTML = E5[35];
+            document.getElementById("Post5Lang6").innerHTML = E5[36];
+            document.getElementById("Post5Lang7").innerHTML = E5[37];
+            document.getElementById("Post5Lang8").innerHTML = E5[38];
+            document.getElementById("Post5Lang9").innerHTML = E5[39];
+            document.getElementById("Post5Lang10").innerHTML = E5[40];
+            document.getElementById("Post5Lang11").innerHTML = E5[41];
+
+            document.getElementById("Post6Lang1").innerHTML = E6[31];
+            document.getElementById("Post6Lang2").innerHTML = E6[32];
+            document.getElementById("Post6Lang3").innerHTML = E6[33];
+            document.getElementById("Post6Lang4").innerHTML = E6[34];
+            document.getElementById("Post6Lang5").innerHTML = E6[35];
+            document.getElementById("Post6Lang6").innerHTML = E6[36];
+            document.getElementById("Post6Lang7").innerHTML = E6[37];
+            document.getElementById("Post6Lang8").innerHTML = E6[38];
+            document.getElementById("Post6Lang9").innerHTML = E6[39];
+            document.getElementById("Post6Lang10").innerHTML = E6[40];
+            document.getElementById("Post6Lang11").innerHTML = E6[41];
+
+            document.getElementById("Post7Lang1").innerHTML = E7[31];
+            document.getElementById("Post7Lang2").innerHTML = E7[32];
+            document.getElementById("Post7Lang3").innerHTML = E7[33];
+            document.getElementById("Post7Lang4").innerHTML = E7[34];
+            document.getElementById("Post7Lang5").innerHTML = E7[35];
+            document.getElementById("Post7Lang6").innerHTML = E7[36];
+            document.getElementById("Post7Lang7").innerHTML = E7[37];
+            document.getElementById("Post7Lang8").innerHTML = E7[38];
+            document.getElementById("Post7Lang9").innerHTML = E7[39];
+            document.getElementById("Post7Lang10").innerHTML = E7[40];
+            document.getElementById("Post7Lang11").innerHTML = E7[41];
+        }
+        // Parenkami postininkai
+        function BUDI() {
+            for (Lang = 42; Lang <= 44; Lang++) {
+
+                // [45] vėliausių postų pozicijų masyvas
+                E1[45] = [0, 1, 1, 1, 1, 0, "E1"];
+                E2[45] = [0, 1, 1, 1, 1, 0, "E2"];
+                E3[45] = [0, 1, 1, 1, 1, 0, "E3"];
+                E4[45] = [0, 1, 1, 1, 1, 0, "E4"];
+                E5[45] = [0, 1, 1, 1, 1, 0, "E5"];
+                E6[45] = [0, 1, 1, 1, 1, 0, "E6"];
+                E7[45] = [0, 1, 1, 1, 1, 0, "E7"];
+
+                // [46] postų pozicijų sumos masyvas
+                E1[46] = [0, 0, 0, 0, 0];
+                E2[46] = [0, 0, 0, 0, 0];
+                E3[46] = [0, 0, 0, 0, 0];
+                E4[46] = [0, 0, 0, 0, 0];
+                E5[46] = [0, 0, 0, 0, 0];
+                E6[46] = [0, 0, 0, 0, 0];
+                E7[46] = [0, 0, 0, 0, 0];
+
+                // [47] postų pozicijų "nereikalingumo" :) koeficientų masyvas (eiliškumo prioritetas)
+                E1[47] = [0, 0, 0, 0, 0];
+                E2[47] = [0, 0, 0, 0, 0];
+                E3[47] = [0, 0, 0, 0, 0];
+                E4[47] = [0, 0, 0, 0, 0];
+                E5[47] = [0, 0, 0, 0, 0];
+                E6[47] = [0, 0, 0, 0, 0];
+                E7[47] = [0, 0, 0, 0, 0];
+
+                // [48] laikinas postų pozicijų masyvas
+                E1[48] = [0, 0, 0, 0, 0];
+                E2[48] = [0, 0, 0, 0, 0];
+                E3[48] = [0, 0, 0, 0, 0];
+                E4[48] = [0, 0, 0, 0, 0];
+                E5[48] = [0, 0, 0, 0, 0];
+                E6[48] = [0, 0, 0, 0, 0];
+                E7[48] = [0, 0, 0, 0, 0];
+
+                // [49] paskutinė būta posto pozicija
+                E1[49] = [0];
+                E2[49] = [0];
+                E3[49] = [0];
+                E4[49] = [0];
+                E5[49] = [0];
+                E6[49] = [0];
+                E7[49] = [0];
+
+                // [50][0] posto pozicija, kurioje būta mažiausiai kartų, [50][1] kiek kartų būta mažiausiai būtoje posto pozicijoje
+                E1[50] = [0, 0];
+                E2[50] = [0, 0];
+                E3[50] = [0, 0];
+                E4[50] = [0, 0];
+                E5[50] = [0, 0];
+                E6[50] = [0, 0];
+                E7[50] = [0, 0];
+
+                var Leidimas = "Galima";
+
+                var K1 = K2 = K3 = K4 = K5 = K6 = K7 = 0;
+                var Budejimai = 0;
+                if (Lang == 42) {
+                    if (document.Post1Box1.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K1 = "n";
+                        E1[Lang] = "n";
+                    }
+                    if (document.Post2Box1.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K2 = "n";
+                        E2[Lang] = "n";
+                    }
+                    if (document.Post3Box1.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K3 = "n";
+                        E3[Lang] = "n";
+                    }
+                    if (document.Post4Box1.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K4 = "n";
+                        E4[Lang] = "n";
+                    }
+                    if (document.Post5Box1.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K5 = "n";
+                        E5[Lang] = "n";
+                    }
+                    if (document.Post6Box1.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K6 = "n";
+                        E6[Lang] = "n";
+                    }
+                    if (document.Post7Box1.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K7 = "n";
+                        E7[Lang] = "n";
+                    }
+                }
+
+                if (Lang == 43) {
+                    if (document.Post1Box2.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K1 = "n";
+                        E1[Lang] = "n";
+                    }
+                    if (document.Post2Box2.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K2 = "n";
+                        E2[Lang] = "n";
+                    }
+                    if (document.Post3Box2.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K3 = "n";
+                        E3[Lang] = "n";
+                    }
+                    if (document.Post4Box2.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K4 = "n";
+                        E4[Lang] = "n";
+                    }
+                    if (document.Post5Box2.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K5 = "n";
+                        E5[Lang] = "n";
+                    }
+                    if (document.Post6Box2.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K6 = "n";
+                        E6[Lang] = "n";
+                    }
+                    if (document.Post7Box2.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K7 = "n";
+                        E7[Lang] = "n";
+                    }
+                }
+
+                if (Lang == 44) {
+                    if (document.Post1Box3.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K1 = "n";
+                        E1[Lang] = "n";
+                    }
+                    if (document.Post2Box3.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K2 = "n";
+                        E2[Lang] = "n";
+                    }
+                    if (document.Post3Box3.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K3 = "n";
+                        E3[Lang] = "n";
+                    }
+                    if (document.Post4Box3.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K4 = "n";
+                        E4[Lang] = "n";
+                    }
+                    if (document.Post5Box3.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K5 = "n";
+                        E5[Lang] = "n";
+                    }
+                    if (document.Post6Box3.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K6 = "n";
+                        E6[Lang] = "n";
+                    }
+                    if (document.Post7Box3.Nedirba.checked) {
+                        var Budejimai = Budejimai + 1;
+                    } else {
+                        var K7 = "n";
+                        E7[Lang] = "n";
+                    }
+                }
+
+                var Lik = 4;
+                var PostPRI = 0;
+
+                //Budėjimo prioriteto koeficiento apskaičiavimas
+                for (z = Lang - Budejimai; z > 0; z--) {
+                    if (K1 == 0) {
+                        var Postinta = 0;
+                        var nE1 = 0;
+                        for (b = Lang - 1; b >= z; b--) {
+                            if (E1[b] > 0) {
+                                var Postinta = Postinta + 1;
+                            }
+                            if (E1[b] == "n") {
+                                var nE1 = nE1 + 1;
+                            }
+                        }
+                        var Koe1 = Postinta / (Lang - 1 - (b + nE1));
+                        if (isNaN(Koe1)) {
+                            var Koe1 = 0;
+                        }
+                    }
+                    if (K2 == 0) {
+                        var Postinta = 0;
+                        var nE2 = 0;
+                        for (b = Lang - 1; b >= z; b--) {
+                            if (E2[b] > 0) {
+                                var Postinta = Postinta + 1;
+                            }
+                            if (E2[b] == "n") {
+                                var nE2 = nE2 + 1;
+                            }
+                        }
+                        var Koe2 = Postinta / (Lang - 1 - (b + nE2));
+                        if (isNaN(Koe2)) {
+                            var Koe2 = 0;
+                        }
+                    }
+                    if (K3 == 0) {
+                        var Postinta = 0;
+                        var nE3 = 0;
+                        for (b = Lang - 1; b >= z; b--) {
+                            if (E3[b] > 0) {
+                                var Postinta = Postinta + 1;
+                            }
+                            if (E3[b] == "n") {
+                                var nE3 = nE3 + 1;
+                            }
+                        }
+                        var Koe3 = Postinta / (Lang - 1 - (b + nE3));
+                        if (isNaN(Koe3)) {
+                            var Koe3 = 0;
+                        }
+                    }
+                    if (K4 == 0) {
+                        var Postinta = 0;
+                        var nE4 = 0;
+                        for (b = Lang - 1; b >= z; b--) {
+                            if (E4[b] > 0) {
+                                var Postinta = Postinta + 1;
+                            }
+                            if (E4[b] == "n") {
+                                var nE4 = nE4 + 1;
+                            }
+                        }
+                        var Koe4 = Postinta / (Lang - 1 - (b + nE4));
+                        if (isNaN(Koe4)) {
+                            var Koe4 = 0;
+                        }
+                    }
+                    if (K5 == 0) {
+                        var Postinta = 0;
+                        var nE5 = 0;
+                        for (b = Lang - 1; b >= z; b--) {
+                            if (E5[b] > 0) {
+                                var Postinta = Postinta + 1;
+                            }
+                            if (E5[b] == "n") {
+                                var nE5 = nE5 + 1;
+                            }
+                        }
+                        var Koe5 = Postinta / (Lang - 1 - (b + nE5));
+                        if (isNaN(Koe5)) {
+                            var Koe5 = 0;
+                        }
+                    }
+                    if (K6 == 0) {
+                        var Postinta = 0;
+                        var nE6 = 0;
+                        for (b = Lang - 1; b >= z; b--) {
+                            if (E6[b] > 0) {
+                                var Postinta = Postinta + 1;
+                            }
+                            if (E6[b] == "n") {
+                                var nE6 = nE6 + 1;
+                            }
+                        }
+                        var Koe6 = Postinta / (Lang - 1 - (b + nE6));
+                        if (isNaN(Koe6)) {
+                            var Koe6 = 0;
+                        }
+                    }
+                    if (K7 == 0) {
+                        var Postinta = 0;
+                        var nE7 = 0;
+                        for (b = Lang - 1; b >= z; b--) {
+                            if (E7[b] > 0) {
+                                var Postinta = Postinta + 1;
+                            }
+                            if (E7[b] == "n") {
+                                var nE7 = nE7 + 1;
+                            }
+                        }
+                        var Koe7 = Postinta / (Lang - 1 - (b + nE7));
+                        if (isNaN(Koe7)) {
+                            var Koe7 = 0;
+                        }
+                    }
+
+                    // Koeficientai surikiuojami
+                    var sk = [Koe1, Koe2, Koe3, Koe4, Koe5, Koe6, Koe7].sort();
+                    var PostPRI = 0;
+                    var x = 0;
+
+                    // Vidinis ciklas pirminiam atrinkimui
+                    for (y = 0; PostPRI <= Lik; y++) {
+                        if (sk[x] == Koe1) {
+                            var PostPRI = PostPRI + 1;
+                        }
+                        if (sk[x] == Koe2) {
+                            var PostPRI = PostPRI + 1;
+                        }
+                        if (sk[x] == Koe3) {
+                            var PostPRI = PostPRI + 1;
+                        }
+                        if (sk[x] == Koe4) {
+                            var PostPRI = PostPRI + 1;
+                        }
+                        if (sk[x] == Koe5) {
+                            var PostPRI = PostPRI + 1;
+                        }
+                        if (sk[x] == Koe6) {
+                            var PostPRI = PostPRI + 1;
+                        }
+                        if (sk[x] == Koe7) {
+                            var PostPRI = PostPRI + 1;
+                        }
+
+                        // Atrinkti postininkai
+                        if (PostPRI <= Lik) {
+                            if (sk[x] == Koe1) {
+                                var K1 = 2;
+                            }
+                            if (sk[x] == Koe2) {
+                                var K2 = 2;
+                            }
+                            if (sk[x] == Koe3) {
+                                var K3 = 2;
+                            }
+                            if (sk[x] == Koe4) {
+                                var K4 = 2;
+                            }
+                            if (sk[x] == Koe5) {
+                                var K5 = 2;
+                            }
+                            if (sk[x] == Koe6) {
+                                var K6 = 2;
+                            }
+                            if (sk[x] == Koe7) {
+                                var K7 = 2;
+                            }
+                        }
+
+                        // kai nori išeit iš ciklo...
+                        if (PostPRI >= Lik) {
+                            var paskutiniai = x + PostPRI;
+                            if (sk[x] !== Koe1 && K1 !== 2 && K1 !== "n" && paskutiniai !== 7) {
+                                var K1 = 4;
+                            }
+                            if (sk[x] !== Koe2 && K2 !== 2 && K2 !== "n" && paskutiniai !== 7) {
+                                var K2 = 4;
+                            }
+                            if (sk[x] !== Koe3 && K3 !== 2 && K3 !== "n" && paskutiniai !== 7) {
+                                var K3 = 4;
+                            }
+                            if (sk[x] !== Koe4 && K4 !== 2 && K4 !== "n" && paskutiniai !== 7) {
+                                var K4 = 4;
+                            }
+                            if (sk[x] !== Koe5 && K5 !== 2 && K5 !== "n" && paskutiniai !== 7) {
+                                var K5 = 4;
+                            }
+                            if (sk[x] !== Koe6 && K6 !== 2 && K6 !== "n" && paskutiniai !== 7) {
+                                var K6 = 4;
+                            }
+                            if (sk[x] !== Koe7 && K7 !== 2 && K7 !== "n" && paskutiniai !== 7) {
+                                var K7 = 4;
+                            }
+                        }
+                        var x = x + PostPRI;
+                        if (PostPRI <= Lik) {
+                            var Lik = Lik - PostPRI;
+                            var PostPRI = 0;
+                        }
+                    }
+
+                    // Koeficientui suteikiama reikšmė E
+                    if (K1 == 2 || K1 == 4) {
+                        var Koe1 = "E";
+                    }
+                    if (K2 == 2 || K2 == 4) {
+                        var Koe2 = "E";
+                    }
+                    if (K3 == 2 || K3 == 4) {
+                        var Koe3 = "E";
+                    }
+                    if (K4 == 2 || K4 == 4) {
+                        var Koe4 = "E";
+                    }
+                    if (K5 == 2 || K5 == 4) {
+                        var Koe5 = "E";
+                    }
+                    if (K6 == 2 || K6 == 4) {
+                        var Koe6 = "E";
+                    }
+                    if (K7 == 2 || K7 == 4) {
+                        var Koe7 = "E";
+                    }
+                }
+
+                // Postininkų parinkimas jei nebeužteko ciklų
+                for (x = 0; x < Lik; x++) {
+                    var betkoks = Math.floor(Math.random() * (PostPRI - x));
+                    var kint = -1;
+                    if (K1 == 0) {
+                        var kint = kint + 1;
+                        if (kint == betkoks) {
+                            var K1 = 2;
+                        }
+                    }
+                    if (K2 == 0) {
+                        var kint = kint + 1;
+                        if (kint == betkoks) {
+                            var K2 = 2;
+                        }
+                    }
+                    if (K3 == 0) {
+                        var kint = kint + 1;
+                        if (kint == betkoks) {
+                            var K3 = 2;
+                        }
+                    }
+                    if (K4 == 0) {
+                        var kint = kint + 1;
+                        if (kint == betkoks) {
+                            var K4 = 2;
+                        }
+                    }
+                    if (K5 == 0) {
+                        var kint = kint + 1;
+                        if (kint == betkoks) {
+                            var K5 = 2;
+                        }
+                    }
+                    if (K6 == 0) {
+                        var kint = kint + 1;
+                        if (kint == betkoks) {
+                            var K6 = 2;
+                        }
+                    }
+                    if (K7 == 0) {
+                        var kint = kint + 1;
+                        if (kint == betkoks) {
+                            var K7 = 2;
+                        }
+                    }
+                }
+
+
+
+                // Laikini kintamieji sukeliami į masyvą
+                if (K1 == 4) {
+                    E1[Lang] = "";
+                }
+                if (K2 == 4) {
+                    E2[Lang] = "";
+                }
+                if (K3 == 4) {
+                    E3[Lang] = "";
+                }
+                if (K4 == 4) {
+                    E4[Lang] = "";
+                }
+                if (K5 == 4) {
+                    E5[Lang] = "";
+                }
+                if (K6 == 4) {
+                    E6[Lang] = "";
+                }
+                if (K7 == 4) {
+                    E7[Lang] = "";
+                }
+
+
+                if (K1 == 0) {
+                    E1[Lang] = "";
+                }
+                if (K2 == 0) {
+                    E2[Lang] = "";
+                }
+                if (K3 == 0) {
+                    E3[Lang] = "";
+                }
+                if (K4 == 0) {
+                    E4[Lang] = "";
+                }
+                if (K5 == 0) {
+                    E5[Lang] = "";
+                }
+                if (K6 == 0) {
+                    E6[Lang] = "";
+                }
+                if (K7 == 0) {
+                    E7[Lang] = "";
+                }
+                var Bendras = [0];
+
+                // Pirmoji pageidaujama posto pozicija pagal kurią vėliau žiūrima ar kitos nėra tokios pačios
+                var Pageid = 0;
+                // Vienodų pageidaujamų poto pozicijų skaitliukas (parodo tik ar VISOS keturios pageidaujamos pozicijos vienodos!)
+                var PozCount = 0;
+                // Jei postininkui suteikta reikšmė "2" (kuri reiškia, kad reikės budėt), nukreipiamas į budinčio postininko ISTORIJOS ANALIZĖS funkciją
+                if (K1 == 2) {
+                    Postininkas(E1);
+                }
+                if (K2 == 2) {
+                    Postininkas(E2);
+                }
+                if (K3 == 2) {
+                    Postininkas(E3);
+                }
+                if (K4 == 2) {
+                    Postininkas(E4);
+                }
+                if (K5 == 2) {
+                    Postininkas(E5);
+                }
+                if (K6 == 2) {
+                    Postininkas(E6);
+                }
+                if (K7 == 2) {
+                    Postininkas(E7);
+                }
+
+                // Budinčio postininko ISTORIJOS ANALIZĖ
+                function Postininkas(x) {
+                    var P1 = P2 = P3 = P4 = 0;
+                    for (p = 1; p <= 4; p++) {
+                        var sk = 0;
+                        for (b = Lang - 1; b >= 0; b--) {
+                            if (p == 1 && p == x[b]) {
+                                var P1 = P1 + 1;
+                                if (P1 == 1) {
+                                    x[45][p] = b;
+                                }
+                            }
+                            if (p == 2 && p == x[b]) {
+                                var P2 = P2 + 1;
+                                if (P2 == 1) {
+                                    x[45][p] = b;
+                                }
+                            }
+                            if (p == 3 && p == x[b]) {
+                                var P3 = P3 + 1;
+                                if (P3 == 1) {
+                                    x[45][p] = b;
+                                }
+                            }
+                            if (p == 4 && p == x[b]) {
+                                var P4 = P4 + 1;
+                                if (P4 == 1) {
+                                    x[45][p] = b;
+                                }
+                            }
+                            if (x[b] > 0) {
+                                var sk = sk + 1;
+                                if (x[47][p] == 0 && x[b] == p) {
+                                    x[47][p] = 1 / sk;
+
+                                }
+                            }
+                        }
+                    }
+                    x[48] = [P1, P2, P3, P4];
+                    x[46] = [0, P1, P2, P3, P4, [P1, P2, P3, P4].sort(function (a, b) { return a - b })[3]];
+
+                    var PB = [P1, P2, P3, P4].sort(function (a, b) { return a - b });
+                    // Surandamos posto pozicijos, kuriose būta mažiausiai kartų [50][0] ir kiek kartų būta mažiausiai būtoje posto pozicijoje [50][1]
+                    x[50][1] = PB[0];
+                    if (PB[0] == P1 && x[50][0] == 0) {
+                        x[50][0] = 1;
+                    }
+                    if (PB[0] == P2 && x[50][0] == 0) {
+                        x[50][0] = 2;
+                    }
+                    if (PB[0] == P3 && x[50][0] == 0) {
+                        x[50][0] = 3;
+                    }
+                    if (PB[0] == P4 && x[50][0] == 0) {
+                        x[50][0] = 4;
+                    }
+
+                    // Jei kažkuriuo postininku būta vos 1 kartą
+                    if (PB[0] <= 1) {
+                        Leidimas = "Negalima";
+                    }
+
+                    x[Lang] = [0, P1 / PB[3], P2 / PB[3], P3 / PB[3], P4 / PB[3]];
+                    console.log(Lang, x[45][6], "   ", P1, P2, P3, P4);
+
+                    // Bendro koeficientų masyvo sudarymas
+                    for (z = 1; z <= 4; z++) {
+                        Bendras.push(x[Lang][z]);
+                    }
+                    // Į [49] langelį įrašoma paskutinė pozicija, kurioje būta
+                    for (z = 1; z <= 4; z++) {
+                        if ([x[45][1], x[45][2], x[45][3], x[45][4]].sort(function (a, b) { return b - a })[0] == x[45][z]) {
+                            x[49] = z;
+                            if (z == 4) {
+                                var z = 0;
+                            }
+                            // Prie [45] langelio masyvo pridedama "pageidaujama" pozicija [5], pagal tai kurioje pozicijoje paskutinį kartą būta
+                            x[45][5] = z + 1;
+                            var z = 4;
+                        }
+                    }
+                    // Patikrinama ar pageidaujamos pozicijos nėra visos keturios vienodos
+                    if (Pageid == 0) {
+                        Pageid = x[45][5];
+                    }
+                    if (x[45][5] == Pageid) {
+                        PozCount = PozCount + 1;
+                    }
+                }
+                var Rik = Bendras.sort(function (a, b) { return a - b });
+
+
+                // Jei koks asilas sugalvotų pažymėt visas "n" raides
+                if (Budejimai !== 0) {
+
+
+
+                    if (Rik[1] > 0.25 && Leidimas == "Galima" && PozCount !== 4) {
+                        POZICIJOS_eiliskumas();
+                    }
+
+
+                    // POSTO POZICIJOS parinkimas pagal paskutinę poziciją
+                    function POZICIJOS_eiliskumas() {
+                        console.log("-----------EILIŠKUMAS----------");
+                        for (x = 1; x <= 4; x++) {
+                            var Temp = [0];
+                            // 1. Suskaičiuojam kiek yra VIENO POSTO besikartojančių pageidaujamų pozicijų
+                            if (E1[45][5] == x) {
+                                Temp.push(E1[45][x]);
+                            }
+                            if (E2[45][5] == x) {
+                                Temp.push(E2[45][x]);
+                            }
+                            if (E3[45][5] == x) {
+                                Temp.push(E3[45][x]);
+                            }
+                            if (E4[45][5] == x) {
+                                Temp.push(E4[45][x]);
+                            }
+                            if (E5[45][5] == x) {
+                                Temp.push(E5[45][x]);
+                            }
+                            if (E6[45][5] == x) {
+                                Temp.push(E6[45][x]);
+                            }
+                            if (E7[45][5] == x) {
+                                Temp.push(E7[45][x]);
+                            }
+                            Temp.sort(function (a, b) { return a - b });
+
+                            // 2. Jei buvo pasikratojančių, atiduodam poziciją tam, kurio buvo seniausiai
+                            if (Temp.length > 2) {
+                                if (E1[45][x] == Temp[1]) {
+                                    E1[Lang] = x;
+                                }
+                                if (E2[45][x] == Temp[1]) {
+                                    E2[Lang] = x;
+                                }
+                                if (E3[45][x] == Temp[1]) {
+                                    E3[Lang] = x;
+                                }
+                                if (E4[45][x] == Temp[1]) {
+                                    E4[Lang] = x;
+                                }
+                                if (E5[45][x] == Temp[1]) {
+                                    E5[Lang] = x;
+                                }
+                                if (E6[45][x] == Temp[1]) {
+                                    E6[Lang] = x;
+                                }
+                                if (E7[45][x] == Temp[1]) {
+                                    E7[Lang] = x;
+                                }
+                                var z = x - 1;
+                                if (x == 1) {
+                                    var z = 4;
+                                }
+                                var SPP = [0];
+
+                                // 3. Pasikartojančią poziciją atiduodam tam, kuriam tiktų pagal eiliškumą (jei tokių yra). Kintamasis "skaitliukas" neleidžia pasikartojančią poziciją atiduoti keliems (jei tokių yra)
+                                var skaitliukas = 0;
+                                if (z == E1[45][5] && skaitliukas == 0) {
+                                    E1[Lang] = E1[45][5];
+                                    var skaitliukas = skaitliukas + 1;
+                                }
+                                if (z == E2[45][5] && skaitliukas == 0) {
+                                    E2[Lang] = E2[45][5];
+                                    var skaitliukas = skaitliukas + 1;
+                                }
+                                if (z == E3[45][5] && skaitliukas == 0) {
+                                    E3[Lang] = E3[45][5];
+                                    var skaitliukas = skaitliukas + 1;
+                                }
+                                if (z == E4[45][5] && skaitliukas == 0) {
+                                    E4[Lang] = E4[45][5];
+                                    var skaitliukas = skaitliukas + 1;
+                                }
+                                if (z == E5[45][5] && skaitliukas == 0) {
+                                    E5[Lang] = E5[45][5];
+                                    var skaitliukas = skaitliukas + 1;
+                                }
+                                if (z == E6[45][5] && skaitliukas == 0) {
+                                    E6[Lang] = E6[45][5];
+                                    var skaitliukas = skaitliukas + 1;
+                                }
+                                if (z == E7[45][5] && skaitliukas == 0) {
+                                    E7[Lang] = E7[45][5];
+                                    var skaitliukas = skaitliukas + 1;
+                                }
+
+                                // 4. Iš likusių pozicija atiduodama tam, kuris joje buvo seniausiai
+                                if (E1[Lang] !== z && E2[Lang] !== z && E3[Lang] !== z && E4[Lang] !== z && E5[Lang] !== z && E6[Lang] !== z && E7[Lang] !== z) {
+                                    if (E1[Lang][0] == 0 && E1[49] !== z) {
+                                        SPP.push(E1[45][z]);
+                                    }
+                                    if (E2[Lang][0] == 0 && E2[49] !== z) {
+                                        SPP.push(E2[45][z]);
+                                    }
+                                    if (E3[Lang][0] == 0 && E3[49] !== z) {
+                                        SPP.push(E3[45][z]);
+                                    }
+                                    if (E4[Lang][0] == 0 && E4[49] !== z) {
+                                        SPP.push(E4[45][z]);
+                                    }
+                                    if (E5[Lang][0] == 0 && E5[49] !== z) {
+                                        SPP.push(E5[45][z]);
+                                    }
+                                    if (E6[Lang][0] == 0 && E6[49] !== z) {
+                                        SPP.push(E6[45][z]);
+                                    }
+                                    if (E7[Lang][0] == 0 && E7[49] !== z) {
+                                        SPP.push(E7[45][z]);
+                                    }
+                                    SPP.sort(function (a, b) { return a - b });
+
+                                    if (SPP[1] == E1[45][z] && E1[Lang][0] == 0) {
+                                        E1[Lang] = z;
+                                    }
+                                    if (SPP[1] == E2[45][z] && E2[Lang][0] == 0) {
+                                        E2[Lang] = z;
+                                    }
+                                    if (SPP[1] == E3[45][z] && E3[Lang][0] == 0) {
+                                        E3[Lang] = z;
+                                    }
+                                    if (SPP[1] == E4[45][z] && E4[Lang][0] == 0) {
+                                        E4[Lang] = z;
+                                    }
+                                    if (SPP[1] == E5[45][z] && E5[Lang][0] == 0) {
+                                        E5[Lang] = z;
+                                    }
+                                    if (SPP[1] == E6[45][z] && E6[Lang][0] == 0) {
+                                        E6[Lang] = z;
+                                    }
+                                    if (SPP[1] == E7[45][z] && E7[Lang][0] == 0) {
+                                        E7[Lang] = z;
+                                    }
+                                }
+                                var x = 4;
+                            }
+                        }
+
+                        // Jei paskutinės pozicijos buvo visos SKIRTINGOS 
+                        if (Temp.length <= 2) {
+                            if (E1[45][5] > 0) {
+                                E1[Lang] = E1[45][5];
+                            }
+                            if (E2[45][5] > 0) {
+                                E2[Lang] = E2[45][5];
+                            }
+                            if (E3[45][5] > 0) {
+                                E3[Lang] = E3[45][5];
+                            }
+                            if (E4[45][5] > 0) {
+                                E4[Lang] = E4[45][5];
+                            }
+                            if (E5[45][5] > 0) {
+                                E5[Lang] = E5[45][5];
+                            }
+                            if (E6[45][5] > 0) {
+                                E6[Lang] = E6[45][5];
+                            }
+                            if (E7[45][5] > 0) {
+                                E7[Lang] = E7[45][5];
+                            }
+                        }
+                        for (x = 1; x <= 4; x++) {
+                            if (E1[Lang] !== x && E2[Lang] !== x && E3[Lang] !== x && E4[Lang] !== x && E5[Lang] !== x && E6[Lang] !== x && E7[Lang] !== x) {
+                                if (E1[Lang][0] == 0 && E1[49] == x) {
+                                    PARINKTI(E1);
+                                }
+                                if (E2[Lang][0] == 0 && E2[49] == x) {
+                                    PARINKTI(E2);
+                                }
+                                if (E3[Lang][0] == 0 && E3[49] == x) {
+                                    PARINKTI(E3);
+                                }
+                                if (E4[Lang][0] == 0 && E4[49] == x) {
+                                    PARINKTI(E4);
+                                }
+                                if (E5[Lang][0] == 0 && E5[49] == x) {
+                                    PARINKTI(E5);
+                                }
+                                if (E6[Lang][0] == 0 && E6[49] == x) {
+                                    PARINKTI(E6);
+                                }
+                                if (E7[Lang][0] == 0 && E7[49] == x) {
+                                    PARINKTI(E7);
+                                }
+                            }
+                        }
+                        function PARINKTI(z) {
+                            for (x = 1; x <= 4; x++) {
+                                if (E1[Lang] !== x && E2[Lang] !== x && E3[Lang] !== x && E4[Lang] !== x && E5[Lang] !== x && E6[Lang] !== x && E7[Lang] !== x) {
+                                    if (z[49] !== x) {
+                                        z[Lang] = x;
+                                        return z;
+                                    }
+                                }
+                            }
+                        }
+                        // Nustatom, kuris iš nepanaudotų postų (NP) buvo seniausiai
+                        // LK - laikinas kintamasis
+                        var Lk = 100;
+                        for (x = 1; x <= 4; x++) {
+                            if (E1[Lang] !== x && E2[Lang] !== x && E3[Lang] !== x && E4[Lang] !== x && E5[Lang] !== x && E6[Lang] !== x && E7[Lang] !== x) {
+
+                                if (E1[Lang][0] == 0 && E1[45][x] < Lk) {
+                                    var Lk = E1[45][x];
+                                    var NP = x;
+                                }
+                                if (E2[Lang][0] == 0 && E2[45][x] < Lk) {
+                                    var Lk = E2[45][x];
+                                    var NP = x;
+                                }
+                                if (E3[Lang][0] == 0 && E3[45][x] < Lk) {
+                                    var Lk = E3[45][x];
+                                    var NP = x;
+                                }
+                                if (E4[Lang][0] == 0 && E4[45][x] < Lk) {
+                                    var Lk = E4[45][x];
+                                    var NP = x;
+                                }
+                                if (E5[Lang][0] == 0 && E5[45][x] < Lk) {
+                                    var Lk = E5[45][x];
+                                    var NP = x;
+                                }
+                                if (E6[Lang][0] == 0 && E6[45][x] < Lk) {
+                                    var Lk = E6[45][x];
+                                    var NP = x;
+                                }
+                                if (E7[Lang][0] == 0 && E7[45][x] < Lk) {
+                                    var Lk = E7[45][x];
+                                    var NP = x;
+                                }
+                            }
+                        }
+                        // Nepanaudotą posto poziciją (NP) atiduodame tam, kurio nustatyta ji ir buvo 
+                        if (E1[45][NP] == Lk) {
+                            E1[Lang] = NP;
+                        }
+                        if (E2[45][NP] == Lk) {
+                            E2[Lang] = NP;
+                        }
+                        if (E3[45][NP] == Lk) {
+                            E3[Lang] = NP;
+                        }
+                        if (E4[45][NP] == Lk) {
+                            E4[Lang] = NP;
+                        }
+                        if (E5[45][NP] == Lk) {
+                            E5[Lang] = NP;
+                        }
+                        if (E6[45][NP] == Lk) {
+                            E6[Lang] = NP;
+                        }
+                        if (E7[45][NP] == Lk) {
+                            E7[Lang] = NP;
+                        }
+
+                        // Paskutinė likusi pozicija atiduodama tam, kuris jos negavo anksčiau
+
+                        // Surandamas postininkas, kuris iki šio momento negavo jokios pozicijos
+                        if (E1[Lang][0] == 0) {
+                            LikPoz(E1);
+                        }
+                        if (E2[Lang][0] == 0) {
+                            LikPoz(E2);
+                        }
+                        if (E3[Lang][0] == 0) {
+                            LikPoz(E3);
+                        }
+                        if (E4[Lang][0] == 0) {
+                            LikPoz(E4);
+                        }
+                        if (E5[Lang][0] == 0) {
+                            LikPoz(E5);
+                        }
+                        if (E6[Lang][0] == 0) {
+                            LikPoz(E6);
+                        }
+                        if (E7[Lang][0] == 0) {
+                            LikPoz(E7);
+                        }
+                        // Postininkui be pozicijos surandama niekieno dar neužimta likusi pozicija
+                        function LikPoz(p) {
+                            for (x = 1; x <= 4; x++) {
+                                if (E1[Lang] !== x && E2[Lang] !== x && E3[Lang] !== x && E4[Lang] !== x && E5[Lang] !== x && E6[Lang] !== x && E7[Lang] !== x) {
+                                    p[Lang] = x;
+                                }
+                            }
+                        }
+                    }
+
+                    console.log("E1[Lang]", E1[Lang]);
+                    console.log("E2[Lang]", E2[Lang]);
+                    console.log("E3[Lang]", E3[Lang]);
+                    console.log("E4[Lang]", E4[Lang]);
+                    console.log("E5[Lang]", E5[Lang]);
+                    console.log("E6[Lang]", E6[Lang]);
+                    console.log("E7[Lang]", E7[Lang]);
+
+
+
+
+                    /* Postų pozicijų parinkimas pagal mažiausią KOEFICIENTĄ */
+                    if (Rik[1] <= 0.25 || Leidimas !== "Galima" || PozCount == 4) {
+                        POZICIJOS_koeficientas();
+                        function POZICIJOS_koeficientas() {
+                            console.log("-----------KOEFICIENTAS----------");
+                            for (x = 1; x <= 16; x++) {
+                                for (z = 1; z <= 4; z++) {
+                                    if (E1[Lang] !== z && E2[Lang] !== z && E3[Lang] !== z && E4[Lang] !== z && E5[Lang] !== z && E6[Lang] !== z && E7[Lang] !== z) {
+
+                                        if (E1[Lang][z] == Rik[x] && E1[Lang][0] == 0) {
+                                            Palyginti()
+                                        }
+                                        if (E2[Lang][z] == Rik[x] && E2[Lang][0] == 0) {
+                                            Palyginti()
+                                        }
+                                        if (E3[Lang][z] == Rik[x] && E3[Lang][0] == 0) {
+                                            Palyginti()
+                                        }
+                                        if (E4[Lang][z] == Rik[x] && E4[Lang][0] == 0) {
+                                            Palyginti()
+                                        }
+                                        if (E5[Lang][z] == Rik[x] && E5[Lang][0] == 0) {
+                                            Palyginti()
+                                        }
+                                        if (E6[Lang][z] == Rik[x] && E6[Lang][0] == 0) {
+                                            Palyginti()
+                                        }
+                                        if (E7[Lang][z] == Rik[x] && E7[Lang][0] == 0) {
+                                            Palyginti()
+                                        }
+                                    }
+                                }
+                            }
+                            function Palyginti() {
+                                var KoefLyg = 0;
+                                var KoefLyg = [E1[Lang][z], E2[Lang][z], E3[Lang][z], E4[Lang][z], E5[Lang][z], E6[Lang][z], E7[Lang][z]].sort(function (a, b) { return a - b });
+
+                                // Jei keli koeficientai yra vienodi, atrenkama pagal tai, kuriam būtų eilė
+                                if (E1[Lang] !== z && E2[Lang] !== z && E3[Lang] !== z && E4[Lang] !== z && E5[Lang] !== z && E6[Lang] !== z && E7[Lang] !== z) {
+                                    if (KoefLyg[0] == KoefLyg[1]) {
+                                        if (z !== 1) {
+                                            var c = z - 1;
+                                        } else {
+                                            var c = 4;
+                                        }
+                                        var XE = [0];
+                                        // Padaromas masyvas iš vėliausiai būtų konkrečiame postų 
+                                        if (E1[Lang][z] == KoefLyg[0]) {
+                                            XE.push(E1[45][c]);
+                                        }
+                                        if (E2[Lang][z] == KoefLyg[0]) {
+                                            XE.push(E2[45][c]);
+                                        }
+                                        if (E3[Lang][z] == KoefLyg[0]) {
+                                            XE.push(E3[45][c]);
+                                        }
+                                        if (E4[Lang][z] == KoefLyg[0]) {
+                                            XE.push(E4[45][c]);
+                                        }
+                                        if (E5[Lang][z] == KoefLyg[0]) {
+                                            XE.push(E5[45][c]);
+                                        }
+                                        if (E6[Lang][z] == KoefLyg[0]) {
+                                            XE.push(E6[45][c]);
+                                        }
+                                        if (E7[Lang][z] == KoefLyg[0]) {
+                                            XE.push(E7[45][c]);
+                                        }
+                                        var XEnd = XE.sort(function (a, b) { return b - a });
+                                        console.log(XEnd);
+                                        if (XEnd[0] == E1[45][c]) {
+                                            E1[Lang] = z;
+                                        }
+                                        if (XEnd[0] == E2[45][c]) {
+                                            E2[Lang] = z;
+                                        }
+                                        if (XEnd[0] == E3[45][c]) {
+                                            E3[Lang] = z;
+                                        }
+                                        if (XEnd[0] == E4[45][c]) {
+                                            E4[Lang] = z;
+                                        }
+                                        if (XEnd[0] == E5[45][c]) {
+                                            E5[Lang] = z;
+                                        }
+                                        if (XEnd[0] == E6[45][c]) {
+                                            E6[Lang] = z;
+                                        }
+                                        if (XEnd[0] == E7[45][c]) {
+                                            E7[Lang] = z;
+                                        }
+
+                                        // Jei koeficientai nevienodi...
+                                    } else {
+                                        if (KoefLyg[0] == E1[Lang][z]) {
+                                            E1[Lang] = z;
+                                        }
+                                        if (KoefLyg[0] == E2[Lang][z]) {
+                                            E2[Lang] = z;
+                                        }
+                                        if (KoefLyg[0] == E3[Lang][z]) {
+                                            E3[Lang] = z;
+                                        }
+                                        if (KoefLyg[0] == E4[Lang][z]) {
+                                            E4[Lang] = z;
+                                        }
+                                        if (KoefLyg[0] == E5[Lang][z]) {
+                                            E5[Lang] = z;
+                                        }
+                                        if (KoefLyg[0] == E6[Lang][z]) {
+                                            E6[Lang] = z;
+                                        }
+                                        if (KoefLyg[0] == E7[Lang][z]) {
+                                            E7[Lang] = z;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            document.getElementById("Post1Lang12").style.fontSize = "16";
+            document.getElementById("Post2Lang12").style.fontSize = "16";
+            document.getElementById("Post3Lang12").style.fontSize = "16";
+            document.getElementById("Post4Lang12").style.fontSize = "16";
+            document.getElementById("Post5Lang12").style.fontSize = "16";
+            document.getElementById("Post6Lang12").style.fontSize = "16";
+            document.getElementById("Post7Lang12").style.fontSize = "16";
+
+            if (E1[42] !== "n") {
+                document.getElementById("Post1Lang12").style.fontSize = "30";
+            }
+            if (E2[42] !== "n") {
+                document.getElementById("Post2Lang12").style.fontSize = "30";
+            }
+            if (E3[42] !== "n") {
+                document.getElementById("Post3Lang12").style.fontSize = "30";
+            }
+            if (E4[42] !== "n") {
+                document.getElementById("Post4Lang12").style.fontSize = "30";
+            }
+            if (E5[42] !== "n") {
+                document.getElementById("Post5Lang12").style.fontSize = "30";
+            }
+            if (E6[42] !== "n") {
+                document.getElementById("Post6Lang12").style.fontSize = "30";
+            }
+            if (E7[42] !== "n") {
+                document.getElementById("Post7Lang12").style.fontSize = "30";
+            }
+            document.getElementById("Post1Lang12").innerHTML = E1[42];
+            document.getElementById("Post2Lang12").innerHTML = E2[42];
+            document.getElementById("Post3Lang12").innerHTML = E3[42];
+            document.getElementById("Post4Lang12").innerHTML = E4[42];
+            document.getElementById("Post5Lang12").innerHTML = E5[42];
+            document.getElementById("Post6Lang12").innerHTML = E6[42];
+            document.getElementById("Post7Lang12").innerHTML = E7[42];
+
+            document.getElementById("Post1Lang13").innerHTML = E1[43];
+            document.getElementById("Post2Lang13").innerHTML = E2[43];
+            document.getElementById("Post3Lang13").innerHTML = E3[43];
+            document.getElementById("Post4Lang13").innerHTML = E4[43];
+            document.getElementById("Post5Lang13").innerHTML = E5[43];
+            document.getElementById("Post6Lang13").innerHTML = E6[43];
+            document.getElementById("Post7Lang13").innerHTML = E7[43];
+
+            document.getElementById("Post1Lang14").innerHTML = E1[44];
+            document.getElementById("Post2Lang14").innerHTML = E2[44];
+            document.getElementById("Post3Lang14").innerHTML = E3[44];
+            document.getElementById("Post4Lang14").innerHTML = E4[44];
+            document.getElementById("Post5Lang14").innerHTML = E5[44];
+            document.getElementById("Post6Lang14").innerHTML = E6[44];
+            document.getElementById("Post7Lang14").innerHTML = E7[44];
+
+            /* Surandamas paskutinis ciklas ir pažymimas "X" */
+            PaskCikl(E1);
+            PaskCikl(E2);
+            PaskCikl(E3);
+            PaskCikl(E4);
+            PaskCikl(E5);
+            PaskCikl(E6);
+            PaskCikl(E7);
+
+            function PaskCikl(x) {
+                if (x[0] > 0 && x[0] <= 4) {
+                    for (p = 1; p <= 4; p++) {
+                        for (b = 0; b < 31; b++) {
+                            if (x[b] == p) {
+                                x[b] = "X";
+                                var b = 30;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
